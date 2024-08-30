@@ -3,16 +3,21 @@ import styled from "styled-components";
 import fundo from "../../assets/images/fundo.png";
 import { cores } from "../../Global";
 
-export const HeaderContainer = styled.div`
+export const Container = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  height: 160px;
-  font-size: 16px;
+  height: 200px;
+  font-size: 18px;
+  color: ${cores.vermelho};
   font-weight: 900;
   background-image: url(${fundo});
   background-size: cover;
-  color: ${cores.vermelho};
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 `;
 
 export const TextLink = styled(Link)`

@@ -1,16 +1,36 @@
-import Pizza from "../../assets/images/pizza_marguerita.png";
-import { Button, PizzaContainer } from "./styles";
+import * as S from "./styles";
 
-const Plates = () => (
-  <PizzaContainer>
-    <img src={Pizza} alt="Pizza" />
-    <h2>Pizza Marguerita</h2>
-    <p>
-      A clássica Marguerita: molho de tomate suculento, mussarela derretida,
-      manjericão fresco e um toque de azeite. Sabor e simplicidade!
-    </p>
-    <Button>Adicionar ao carrinho</Button>
-  </PizzaContainer>
-);
+type Props = {
+  id: number;
+  foto: string;
+  preco: number;
+  nome: string;
+  descricao: string;
+  porcao: string;
+  onclick: () => void
+};
+
+const Plates = ({ foto, nome, descricao, onclick}: Props) => {
+  
+
+  const retornaDescricaoPrato = (descricao: string) => {
+    if (descricao.length > 123) {
+      return descricao.slice(0, 120) + "...";
+    }
+  };
+
+  return (
+    <>
+      <S.Container>
+        <img src={foto} alt={nome} />
+        <h2>{nome}</h2>
+        <p>{retornaDescricaoPrato(descricao)}</p>
+        <S.Button onClick={onclick}>
+          Mais detalhes
+        </S.Button>
+      </S.Container>
+    </>
+  );
+};
 
 export default Plates;
