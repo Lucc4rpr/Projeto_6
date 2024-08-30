@@ -23,8 +23,13 @@ export const Container = styled.div`
 
   img {
     width: 300px;
-    height: 167px;
+    height: 170px;
     object-fit: cover;
+  }
+
+  h2 {
+    font-size: 16px;
+    font-weight: 900;
   }
 
   p {
@@ -32,17 +37,11 @@ export const Container = styled.div`
     font-size: 14px;
     line-height: 22px;
   }
-  h2 {
-    font-size: 16px;
-    font-weight: 900;
-  }
-
 `;
 
 export const Button = styled.button`
   border: none;
   cursor: pointer;
-
   font-weight: 900;
   font-size: 14px;
   height: 24px;

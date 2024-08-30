@@ -9,6 +9,7 @@ export const Banner = styled.div`
   justify-content: space-around;
   height: 400px;
   margin-bottom: 80px;
+
   background-image: url(${fundo});
   background-size: cover;
 
@@ -19,10 +20,9 @@ export const Banner = styled.div`
 
 export const H1 = styled.h1`
   text-align: center;
-
   font-weight: 900;
-  width: 539px;
-  height: 84px;
+  width: 550px;
+  height: 80px;
   font-size: 36px;
 
   color: ${cores.vermelho};

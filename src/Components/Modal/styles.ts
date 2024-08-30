@@ -34,7 +34,7 @@ export const ModalContent = styled.div`
   color: ${cores.branco};
 
   width: 1024px;
-  height: 350px;
+  height: 344px;
   z-index: 1;
 
   @media (max-width: ${breakpoints.desktop}) {

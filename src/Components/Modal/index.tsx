@@ -1,24 +1,29 @@
 import { useDispatch } from "react-redux";
 import { Dispatch } from "react";
 
-import { add, open } from "../../store/reducers/cart";
+import { add, openCart } from "../../store/reducers/cart";
 
-import * as S from "./styles";
 import { Button } from "../Plate/styles";
 import { modalType } from "../PlatesList";
 
 import botaoFechar from "../../assets/images/botao_fechar.png";
+import { formataPreco } from "../../utils";
+
+import * as S from "./styles";
+
+type plateProps = {
+  descricao: string;
+  foto: string;
+  id: number;
+  nome: string;
+  porcao: string;
+  preco: number;
+};
 
 interface Props extends modalType {
   setModal: Dispatch<modalType>;
-  plate: any;
+  plate: plateProps;
 }
-export const formataPreco = (number = 0) => {
-  return new Intl.NumberFormat("pt-BR", {
-    style: "currency",
-    currency: "BRL",
-  }).format(number);
-};
 
 const Modal = ({
   id,
@@ -44,7 +49,7 @@ const Modal = ({
       preco: 0,
       visivel: false,
     });
-    dispatch(open());
+    dispatch(openCart());
   };
 
   return (

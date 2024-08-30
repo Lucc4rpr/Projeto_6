@@ -4,7 +4,7 @@ import { breakpoints } from '../../Global'
 export const PlatesListContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 32px;
+    gap: 30px;
 
     @media (max-width: ${breakpoints.desktop}) {
     grid-template-columns: 1fr 1fr;

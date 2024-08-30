@@ -11,7 +11,6 @@ export const ItalianBanner = styled.div<Props>`
   font-size: 32px;
   margin-bottom: 80px;
   font-weight: 900;
-
   background-image: url(${(props) => props.imagem});
   background-size: cover;
 
@@ -25,7 +24,6 @@ export const ItalianBanner = styled.div<Props>`
     align-items: flex-start;
     justify-content: space-between;
     text-align: start;
-
     height: 100%;
 
     color: ${cores.branco};

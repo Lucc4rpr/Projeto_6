@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 300px;
   background-color: ${cores.bege};
   margin-top: 120px;
@@ -27,7 +27,7 @@ export const Copy = styled.p`
   text-align: center;
   font-size: 10px;
   font-weight: 400;
-  width: 500px;
+  width: 480px;
 
   color: ${cores.vermelho};
 

@@ -9,7 +9,6 @@ export const Container = styled.div`
   height: 160px;
   font-size: 18px;
   font-weight: 900;
-
   background-image: url(${fundo});
   background-size: cover;
   color: ${cores.vermelho};

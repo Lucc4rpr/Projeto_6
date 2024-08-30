@@ -11,8 +11,8 @@ export const Container = styled.div`
   flex-direction: column;
   position: relative;
 
-  width: 472px;
-  height: 398px;
+  width: 470px;
+  height: 400px;
   font-weight: 700;
   border: 1px solid ${cores.vermelho};
 
@@ -65,14 +65,12 @@ export const Button = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-weight: 700;
   font-size: 14px;
-  width: 82px;
+  width: 80px;
   height: 24px;
   margin-left: 8px;
   margin-top: 8px;
-
   color: ${cores.branco};
   background-color: ${cores.vermelho};
 `;
@@ -80,7 +78,6 @@ export const Button = styled(Link)`
 export const TagContainer = styled.div<Props>`
   display: flex;
   position: absolute;
-
   top: 16px;
   left: ${(props) => (props.destaque ? "230px" : "380px")};
   gap: 8px;
@@ -93,14 +90,11 @@ export const TagContainer = styled.div<Props>`
 export const Tag = styled.span`
   display: flex;
   align-items: center;
-
   width: auto;
   height: 14px;
   padding: 12px;
-
   font-weight: 700;
   font-size: 12px;
-
   color: ${cores.branco};
   background-color: ${cores.vermelho};
 `;
