@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { cores } from "../../Global";
+import { breakpoints, cores } from "../../Global";
 
 export const Container = styled.div`
   display: flex;
@@ -15,7 +15,7 @@ export const Div = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 
   ul {
     display: flex;
@@ -30,4 +30,8 @@ export const Copy = styled.p`
   width: 500px;
 
   color: ${cores.vermelho};
+
+  @media (max-width: ${breakpoints.desktop}) {
+   width: 320px
+  }
 `;

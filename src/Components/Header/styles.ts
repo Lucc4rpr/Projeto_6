@@ -1,22 +1,36 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import fundo from "../../assets/images/fundo.png";
-import { cores } from "../../Global";
+import { breakpoints, cores } from "../../Global";
 
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  height: 200px;
+  height: 160px;
   font-size: 18px;
-  color: ${cores.vermelho};
   font-weight: 900;
+
   background-image: url(${fundo});
   background-size: cover;
+  color: ${cores.vermelho};
+
+  @media (max-width: ${breakpoints.desktop}) {
+    padding: 24px;
+  }
 
   div {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  p {
+    cursor: pointer;
   }
 `;
 
